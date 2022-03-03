@@ -17,6 +17,7 @@ export default class App extends Component {
   login() {
     this.setState({ isLogin: true });
   }
+  // for checking only...
   componentDidMount() {
     console.log('didM')
   }

@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Posts extends Component {
 	constructor() {
 		super();
-		this.state = { posts: [{}], isLoading: true }
+		this.state = { posts: [], isLoading: true }
 	}
 	async componentDidMount() {
 		try {
