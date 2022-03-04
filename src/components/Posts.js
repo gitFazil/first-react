@@ -20,7 +20,7 @@ export default class Posts extends Component {
 		return (
 
 			<div>
-				<ul >{isLoading ? <li>Lodding....</li> : posts.map((post, i) => {
+				<ul >{isLoading ? <h2>Loading............</h2> : posts.map((post, i) => {
 					return (
 						<>
 							<h1>{post.title}</h1>

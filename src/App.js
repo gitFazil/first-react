@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './components/Nav';
-import Posts from './components/Posts';
+import Posts from './components/Posts'
 
 import Counter from './components/Timer';
 
@@ -41,7 +41,10 @@ export default class App extends Component {
     return (
       <div>
 
-        {this.state.toggle ? <Nav email="kfazil@gmail.com" name="Fazil" contact="7355544283" /> : null}
+        {this.state.toggle ?
+          <Nav email="kfazil@gmail.com" name="Fazil" contact="7355544283" />
+          : null
+        }
         <button onClick={() => this.setState({ toggle: false })}>Delete</button>
         <div> {this.state.isLogin ? <button onClick={this.logout} >Logout</button> : <button onClick={this.login}>Login</button>
         }</div>

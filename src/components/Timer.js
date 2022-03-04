@@ -7,7 +7,7 @@ export default class Counter extends Component {
 			count: 0,
 			msg: 'click me'
 		}
-		console.log("constructer")
+		console.log("constructor")
 	}
 	onclick = () => {
 		console.log("clicked")
@@ -33,7 +33,15 @@ class Log extends Component {
 	shouldComponentUpdate(newProps, newState) {
 		console.log("should update triggered")
 		console.log(newProps, newState)
-		return newProps.time > 5 ? false : true;
+		if (newProps.time > 5) {
+			if (newProps.time <= 6) {
+				alert("stopped counter below counter will stop");
+			} else {
+				return false;
+			}
+		} else {
+			return true
+		}
 	}
 	render() {
 		console.log("render")
