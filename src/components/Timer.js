@@ -35,7 +35,7 @@ class Log extends Component {
 		console.log(newProps, newState)
 		if (newProps.time > 5) {
 			if (newProps.time <= 6) {
-				alert("stopped counter below counter will stop");
+				alert(" below counter will be stopped");
 			} else {
 				return false;
 			}
